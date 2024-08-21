@@ -27,6 +27,10 @@ def contacts(request):
     return render(request, 'services/contacts.html')
 
 
+def company(request):
+    return render(request, 'services/company.html')
+
+
 class ServiceCreateView(LoginRequiredMixin, CreateView):
     model = Service
     form_class = ServiceForm
@@ -43,8 +47,6 @@ class ServiceUpdateView(LoginRequiredMixin, UpdateView):
     redirect_field_name = "redirect_to"
 
 
-
-
 class ServiceDeleteView(LoginRequiredMixin, DeleteView):
     model = Service
     success_url = reverse_lazy('services:home')
@@ -57,6 +59,3 @@ class ServiceDetailView(LoginRequiredMixin, DetailView):
     template_name = 'services/product_detail.html'
     login_url = "users:login"
     redirect_field_name = "redirect_to"
-
-
-
