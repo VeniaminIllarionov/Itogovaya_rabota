@@ -56,6 +56,6 @@ class ServiceDeleteView(LoginRequiredMixin, DeleteView):
 
 class ServiceDetailView(LoginRequiredMixin, DetailView):
     model = Service
-    template_name = 'services/product_detail.html'
+    template_name = 'services/service_detail.html'
     login_url = "users:login"
     redirect_field_name = "redirect_to"

@@ -14,4 +14,4 @@ urlpatterns = [
     path('contact/', contacts, name='contact'),
     path('company/', company, name='company'),
     path('delete/<int:pk>/', ServiceDeleteView.as_view(), name='delete'),
-    path('product/<int:pk>/', cache_page(60)(ServiceDetailView.as_view()), name='product_detail'), ]
+    path('service/<int:pk>/', cache_page(60)(ServiceDetailView.as_view()), name='service_detail'), ]
