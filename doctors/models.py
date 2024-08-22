@@ -13,7 +13,7 @@ class Doctor(models.Model):
     picture = models.ImageField(upload_to='doctors/', blank=True, null=True, verbose_name='Картинка')
 
     def __str__(self):
-        return f'{self.name} {self.surname} {self.patronymic}'
+        return f'{self.surname} {self.name} {self.patronymic}'
 
     class Meta:
         verbose_name = 'Врач'
