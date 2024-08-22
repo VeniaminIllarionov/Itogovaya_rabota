@@ -10,10 +10,10 @@ class Doctor(models.Model):
     specialization = models.CharField(max_length=250, verbose_name='Специализация')
     science = models.TextField(verbose_name='Ученая степень / Категория / Ученое звание')
     post = models.CharField(max_length=250, verbose_name='Должность')
-    picture = models.ImageField(upload_to='services/', blank=True, null=True, verbose_name='Картинка')
+    picture = models.ImageField(upload_to='doctors/', blank=True, null=True, verbose_name='Картинка')
 
     def __str__(self):
-        return f'{self.name}.{self.surname}.{self.patronymic}'
+        return f'{self.name} {self.surname} {self.patronymic}'
 
     class Meta:
         verbose_name = 'Врач'

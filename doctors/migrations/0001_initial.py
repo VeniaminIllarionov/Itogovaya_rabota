@@ -23,7 +23,7 @@ class Migration(migrations.Migration):
                 ('specialization', models.CharField(max_length=250, verbose_name='Специализация')),
                 ('science', models.TextField(verbose_name='Ученая степень / Категория / Ученое звание')),
                 ('post', models.CharField(max_length=250, verbose_name='Должность')),
-                ('picture', models.ImageField(blank=True, null=True, upload_to='services/', verbose_name='Картинка')),
+                ('picture', models.ImageField(blank=True, null=True, upload_to='doctors/', verbose_name='Картинка')),
             ],
             options={
                 'verbose_name': 'Врач',

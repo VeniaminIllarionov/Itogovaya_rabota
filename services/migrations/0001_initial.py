@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=250, verbose_name='Услуга')),
                 ('description', models.TextField(max_length=250, verbose_name='Описание')),
                 ('price', models.DecimalField(decimal_places=2, max_digits=8, verbose_name='Цена')),
-                ('picture', models.ImageField(blank=True, null=True, upload_to='services/', verbose_name='Картинка')),
+                ('picture', models.ImageField(blank=True, null=True, upload_to='doctors/', verbose_name='Картинка')),
             ],
             options={
                 'verbose_name': 'Услуга',

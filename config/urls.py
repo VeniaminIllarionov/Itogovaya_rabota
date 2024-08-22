@@ -22,6 +22,7 @@ from config import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('services.urls', namespace='services')),
+    path('services/', include('services.urls', namespace='services')),
+    path('doctors/', include('doctors.urls', namespace='doctors')),
     path('users/', include('users.urls', namespace='users')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
