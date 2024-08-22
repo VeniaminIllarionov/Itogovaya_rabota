@@ -7,9 +7,9 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
                 <div class="col">
                     <div class="card shadow-sm">
-                        <br style="text-align: center;"><img src="{{ object.picture | media_filter }}"
-                                                              style="width:200px;"></br>
                         <div class="card-body">
+                            <div style="text-align: center;"><img src="{{ object.picture | media_filter }}"
+                                                              style="width:200px;"></div>
                             <h2 class="card-text">{{ object }}</h2>
                             <p class="card-text">Стаж работы : {{ object.work_experience }} </p>
                             <p class="card-text">Место работы : {{ object.clinical }}</p>

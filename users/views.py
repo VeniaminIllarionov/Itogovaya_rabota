@@ -1,9 +1,8 @@
 import secrets
-
 from django.contrib.auth.forms import PasswordResetForm
 from django.contrib.auth.views import PasswordResetView
 from django.core.mail import send_mail
-from django.shortcuts import get_object_or_404, redirect
+from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse_lazy, reverse
 from django.views.generic import CreateView, DetailView
 
@@ -66,5 +65,3 @@ class UsersDetail(DetailView):
     model = User
     template_name = 'users/user_detail.html'
     context_object_name = 'objects_list'
-
-

@@ -12,5 +12,5 @@ urlpatterns = [
     path('email_confirm/<str:token>/', email_confirm, name='email_confirm'),
     path('reset_password/', GeneratePasswordView.as_view(template_name='reset_password.html'),
          name='reset_password'),
-    path('profile/<int:pk>', UsersDetail.as_view(), name='profile'),
+    path('detail/<int:pk>', UsersDetail.as_view(), name='detail'),
 ]

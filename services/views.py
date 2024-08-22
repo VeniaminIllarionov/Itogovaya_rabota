@@ -25,6 +25,10 @@ def contacts(request):
     return render(request, 'services/contacts.html')
 
 
+def home(request):
+    return render(request, 'services/home_page.html')
+
+
 def company(request):
     return render(request, 'services/company.html')
 
