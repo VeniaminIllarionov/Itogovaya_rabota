@@ -27,7 +27,7 @@ class Record(models.Model):
         return self.user.email
 
     def __str__(self):
-        return f"{self.user.email} подписан на {self.service.name}."
+        return f"{self.user.email} записан на {self.service.name}."
 
     class Meta:
         verbose_name = 'Запись'
