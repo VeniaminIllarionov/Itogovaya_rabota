@@ -25,9 +25,6 @@ class Record(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     record_time = models.DateField(verbose_name='Дата записи')
 
-    def get_user_email(self):
-        return self.user.email
-
     def __str__(self):
         return f"{self.user.last_name} {self.user.first_name} записан на {self.service.name} к {self.doctor}."
 
@@ -41,3 +38,19 @@ class Record(models.Model):
             ('can_delete_record', 'Может удалять запись'),
         ]
 
+
+class Diagnostic(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name="Пользователь")
+    record = models.ForeignKey(Record, on_delete=models.CASCADE, verbose_name="Запись")
+    result = models.TextField(verbose_name='Результат')
+    diagnose = models.CharField(max_length=250, verbose_name='Диагноз')
+
+    def __str__(self):
+        return f"{self.user.last_name} {self.user.first_name} результат {self.record.service}."
+
+    class Meta:
+        verbose_name = 'Диагностика'
+        verbose_name_plural = 'Диагностики'
+        permissions = [
+            ('can_view_diagnostics', 'Может просматривать диагностики'),
+        ]

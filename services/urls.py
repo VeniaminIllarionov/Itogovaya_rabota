@@ -4,7 +4,7 @@ from django.views.decorators.cache import cache_page
 from services.apps import ServicesConfig
 from services.views import (contacts, ServiceDetailView, ServiceListView, ServiceCreateView, ServiceUpdateView,
                             ServiceDeleteView, company, RecordCreateView, RecordListView, RecordDeleteView,
-                            RecordUpdateView)
+                            RecordUpdateView, DiagnosticListView)
 
 app_name = ServicesConfig.name
 
@@ -19,4 +19,5 @@ urlpatterns = [
     path('record/', RecordCreateView.as_view(), name='record'),
     path('record/list/', RecordListView.as_view(), name='record_list'),
     path('record/delete/<int:pk>/', RecordDeleteView.as_view(), name='record_delete'),
-    path('record/edit/<int:pk>/', RecordUpdateView.as_view(), name='record_edit'),]
+    path('record/edit/<int:pk>/', RecordUpdateView.as_view(), name='record_edit'),
+    path('diagnostic/', DiagnosticListView.as_view(), name='diagnostic_list'),]

@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from services.models import Service, Record
+from services.models import Service, Record, Diagnostic
 
 
 @admin.register(Service)
@@ -17,3 +17,8 @@ class ServiceAdmin(admin.ModelAdmin):
     search_fields = ('user', 'created_at',)
 
 
+@admin.register(Diagnostic)
+class DiagnosticAdmin(admin.ModelAdmin):
+    list_display = ('id', 'user', 'record', 'result', 'diagnose')
+    list_filter = ('id', 'user')
+    search_fields = ('user', 'id',)

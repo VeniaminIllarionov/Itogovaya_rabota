@@ -1,0 +1,27 @@
+{% extends 'services/base.html' %}
+{% block content %}
+    <body>
+    <div class="album py-5 bg-body-tertiary">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            {% for object in object_list %}
+                {% if user == object.user or user.is_superuser %}
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header text-center">
+                            Результат Диагностики
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item text-success">Пациент: {{ object.user }}</li>
+                            <li class="list-group-item text-secondary">Результат: {{ object.result }}</li>
+                            <li class="list-group-item text-warning">Диагноз: {{ object.diagnose }}</li>
+                        </ul>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+    </div>
+    </div>
+    </div>
+    </body>
+{% endblock %}
+

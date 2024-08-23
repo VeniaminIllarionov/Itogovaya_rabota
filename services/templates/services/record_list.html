@@ -5,6 +5,7 @@
     <div class="album py-5 bg-body-tertiary">
         <div class="container">
             <div class="col-12 mb-5">
+                <a class="btn btn-primary" href="{% url 'services:diagnostic_list' %}" role="button">Результат</a>
                 {% if user.is_superuser %}
                     <a class="btn btn-primary" href="{% url 'services:record' %}" role="button">Записаться</a>
                 {% endif %}

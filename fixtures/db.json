@@ -1,0 +1,963 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2024-08-22T07:59:55.593Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "МРТ (магнитно-резонансная томография)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2024-08-22T08:59:35.926Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "МРТ (магнитно-резонансная томография)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0430\\u0440\\u0442\\u0438\\u043d\\u043a\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2024-08-22T09:13:16.742Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "1",
+      "object_repr": "Азарян.Самвел.Амирханович",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2024-08-22T09:16:34.359Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "Светлана.Карпова.Николаевна",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2024-08-22T09:27:36.910Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "3",
+      "object_repr": "Сергей.Ватажко.Борисович",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2024-08-22T12:39:07.286Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Вениамин Илларионов",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043c\\u044f\", \"\\u0424\\u0430\\u043c\\u0438\\u043b\\u0438\\u044f\", \"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2024-08-23T10:57:46.394Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Сергей Ватажко",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043c\\u044f\", \"\\u0424\\u0430\\u043c\\u0438\\u043b\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2024-08-23T11:06:04.693Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "15",
+      "object_repr": "venya_-@mail.ru записан на Компьютерная томография (КТ) к Карпова Светлана Николаевна.",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2024-08-23T11:06:04.696Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "14",
+      "object_repr": "venya957@gmail.com записан на Программы ведения беременности к Самвел Азарян Амирханович.",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2024-08-23T11:06:04.697Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "13",
+      "object_repr": "venya957@gmail.com записан на Компьютерная томография (КТ) к Карпова Светлана Николаевна.",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2024-08-23T11:06:04.698Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "12",
+      "object_repr": "venya_-@mail.ru записан на Предоперационная подготовка к Карпова Светлана Николаевна.",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2024-08-23T11:06:04.698Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "11",
+      "object_repr": "venya957@gmail.com записан на Программы годового прикрепления «МЕДСити» к Карпова Светлана Николаевна.",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2024-08-23T11:06:04.700Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "10",
+      "object_repr": "venya_-@mail.ru записан на Программы годового прикрепления «МЕДСити» к Самвел Азарян Амирханович.",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2024-08-23T11:06:04.700Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "9",
+      "object_repr": "venya957@gmail.com записан на Программы годового прикрепления «МЕДСити» к Ватажко Сергей Борисович.",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2024-08-23T11:06:04.701Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "6",
+      "object_repr": "venya957@gmail.com записан на Программы ведения беременности к Карпова Светлана Николаевна.",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2024-08-23T11:06:04.701Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "venya957@gmail.com записан на Компьютерная томография (КТ) к Самвел Азарян Амирханович.",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2024-08-23T13:18:12.893Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "Ватажко Сергей результат Компьютерная томография (КТ).",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2024-08-23T13:28:55.557Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "2",
+      "object_repr": "Ватажко Сергей результат Программы ведения беременности.",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 4,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 4,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 4,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 4,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 5,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 5,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 5,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 5,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add Врач",
+      "content_type": 6,
+      "codename": "add_doctor"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change Врач",
+      "content_type": 6,
+      "codename": "change_doctor"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete Врач",
+      "content_type": 6,
+      "codename": "delete_doctor"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view Врач",
+      "content_type": 6,
+      "codename": "view_doctor"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add Услуга",
+      "content_type": 7,
+      "codename": "add_service"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change Услуга",
+      "content_type": 7,
+      "codename": "change_service"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete Услуга",
+      "content_type": 7,
+      "codename": "delete_service"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view Услуга",
+      "content_type": 7,
+      "codename": "view_service"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add Пользователь",
+      "content_type": 8,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change Пользователь",
+      "content_type": 8,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete Пользователь",
+      "content_type": 8,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view Пользователь",
+      "content_type": 8,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add Запись",
+      "content_type": 9,
+      "codename": "add_record"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change Запись",
+      "content_type": 9,
+      "codename": "change_record"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete Запись",
+      "content_type": 9,
+      "codename": "delete_record"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view Запись",
+      "content_type": 9,
+      "codename": "view_record"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Может добавлять запись",
+      "content_type": 9,
+      "codename": "can_add_record"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Может изменять запись",
+      "content_type": 9,
+      "codename": "can_change_record"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Может просматривать запись",
+      "content_type": 9,
+      "codename": "can_view_record"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Может удалять запись",
+      "content_type": 9,
+      "codename": "can_delete_record"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add Диагностика",
+      "content_type": 10,
+      "codename": "add_diagnostic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change Диагностика",
+      "content_type": 10,
+      "codename": "change_diagnostic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete Диагностика",
+      "content_type": 10,
+      "codename": "delete_diagnostic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view Диагностика",
+      "content_type": 10,
+      "codename": "view_diagnostic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Может просматривать диагностики",
+      "content_type": 10,
+      "codename": "can_view_diagnostics"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "doctors",
+      "model": "doctor"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "services",
+      "model": "service"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "users",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "services",
+      "model": "record"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "services",
+      "model": "diagnostic"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "3g9riv8xrz2k825mn1tjyw8iyvk6cun4",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSEMpcPg0r3fQIZHpWogKe3K-O_apAvd3nPOfQnP21r81vPi5yTOAsTpdwscH7nuIN253pqMra7LHOSuyIN2eW0pPy-H-3dQuJdvnYcACAZtRBxpiDApS6Q1E_CoNSqrMkFMztlgsk6EZBhoYodBDzaK9wewYja_:1shU8g:RRRFSFvYykhRTPVv_EeUb058vqdBzBnFs8Zdfzzd0B0",
+      "expire_date": "2024-09-06T13:15:38.153Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "5avdl7s803ocipbt1vttwau45ke9qxe8",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSEMpcPg0r3fQIZHpWogKe3K-O_apAvd3nPOfQnP21r81vPi5yTOAsTpdwscH7nuIN253pqMra7LHOSuyIN2eW0pPy-H-3dQuJdvnYcACAZtRBxpiDApS6Q1E_CoNSqrMkFMztlgsk6EZBhoYodBDzaK9wewYja_:1sgsnv:ecF_8or7-pzEOc4Dk2z2soB_zicBoyFvs92ketHJo54",
+      "expire_date": "2024-09-04T21:23:43.298Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "e8h3irnver7hk1n8mrjbpxedzfgr5wx7",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hBgaGFcuvcMZMoMUjVtUtqV8e7apAvd_vfef6lE21rT1mRJI6uzcur0uw2UHzLtgO803Wad52ldxkHvij5o09eZ5Xk53L-DSq1-a3RZYm87AvJdscETM0UpxvOQQSQwAAMWJxA7WxCd8wZdMH3A0iOq9wfwlzeR:1shS7x:OST_DiQeqe3A3llEXIjuznKmSp6W2GsW_65lRZBoMjU",
+      "expire_date": "2024-09-06T11:06:45.473Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "q6jgjup1gzwjt4jc07vq1wce77kspe2m",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hBgaGFcuvcMZMoMUjVtUtqV8e7apAvd_vfef6lE21rT1mRJI6uzcur0uw2UHzLtgO803Wad52ldxkHvij5o09eZ5Xk53L-DSq1-a3RZYm87AvJdscETM0UpxvOQQSQwAAMWJxA7WxCd8wZdMH3A0iOq9wfwlzeR:1shSHS:yy2Re0NLITg25pBioWiu5XcuIbNs3RdrZr8tNpH2Zug",
+      "expire_date": "2024-09-06T11:16:34.382Z"
+    }
+  },
+  {
+    "model": "doctors.doctor",
+    "pk": 1,
+    "fields": {
+      "name": "Азарян",
+      "surname": "Самвел",
+      "patronymic": "Амирханович",
+      "work_experience": 32,
+      "clinical": "Детская клиника «МЕДСити»",
+      "specialization": "Интерпретация исследований МРТ до и после внутривенного контрастирования",
+      "science": "врач высшей квалификационной категории.",
+      "post": "Заведующий отделением врач рентгенолог",
+      "picture": "services/17f4d74f677b01cdf1b8c818841742f8.jpg.webp"
+    }
+  },
+  {
+    "model": "doctors.doctor",
+    "pk": 2,
+    "fields": {
+      "name": "Светлана",
+      "surname": "Карпова",
+      "patronymic": "Николаевна",
+      "work_experience": 27,
+      "clinical": "Клинико-диагностический центр МЕДСитина Красной Пресне",
+      "specialization": "МРТ диагностика",
+      "science": "кандидат медицинских наук.",
+      "post": "Врач-рентгенолог, Врач ультразвуковой диагностики, Врач-хирург, Врач-онколог",
+      "picture": "services/39acf13f7f50e76f9a56c27c4bbc1fdd.jpg"
+    }
+  },
+  {
+    "model": "doctors.doctor",
+    "pk": 3,
+    "fields": {
+      "name": "Сергей",
+      "surname": "Ватажко",
+      "patronymic": "Борисович",
+      "work_experience": 10,
+      "clinical": "МЕДСити Взрослое отделение",
+      "specialization": "Врач общей практики",
+      "science": "Врач высшей категории",
+      "post": "Врач",
+      "picture": "services/directorc.jpg"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 1,
+    "fields": {
+      "name": "МРТ (магнитно-резонансная томография)",
+      "description": "Магнитно-резонансная томография (МРТ) - томографический метод исследования внутренних органов и тканей с использованием эффекта резонансного поглощения атомами электромагнитных волн.\r\nС помощью МР-диагностики можно успешно выявить большое количество",
+      "price": "10000.00",
+      "picture": "services/загруженное.jpg"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 2,
+    "fields": {
+      "name": "Компьютерная томография (КТ)",
+      "description": "Метод основан на получении послойного рентгеновского изображения органа с помощью компьютера. Просвечивание рентгеновским лучом тела пациента осуществляется вокруг его продольной оси, благодаря чему получаются поперечные «срезы». В компьютерной томог",
+      "price": "8000.00",
+      "picture": "services/kt-gkb81.jpg"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 3,
+    "fields": {
+      "name": "Программы годового прикрепления «МЕДСити»",
+      "description": "В «МЕДСити» разработано несколько видов программ годового прикрепления. Программы различаются наполнением, т.е. перечнем услуг, входящих в программу. Вы можете выбрать программу, наиболеее полно отвечающую вашим потребностям и возможностям.\r\n\r\nЗаключив договор на медицинское обслуживание и оплатив выбранную программу годового прикрепления, вы получаете возможность пользоваться услугами клиники в течение года.\r\n\r\nМы работаем, как с физическими так и юридическими лицами, в том числе в рамках добровольного медицинского страхования.",
+      "price": "39000.00",
+      "picture": "services/k804u1zvdhy6oqtwln12t36lddgcfuv3.png.webp"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 4,
+    "fields": {
+      "name": "Программы ведения беременности",
+      "description": "Беременность — это огромная радость для каждой женщины. Осознание новой зарождающейся жизни дает ощущение необыкновенного счастья. Но вместе с тем, беременность, особенно если она протекает тяжело, - повод серьезно задуматься о своем здоровье и здоровье будущего ребенка.\r\n\r\nПристальное внимание к своему физическому и психологическому состоянию во время беременности — основная задача будущей матери. Правильно выбранная медицинская клиника, консультации с опытным врачом-гинекологом являются залогом благополучного протекания беременности и последующих родов.\r\n\r\nВрачи из Центра гинекологии «МЕДСити» уже 12 лет успешно работают по программе «Ведение беременности», предполагающей комплексную медицинскую и психологическую помощь на протяжении всего срока беременности.",
+      "price": "97000.00",
+      "picture": "services/yinsy4dpbo1ht4s1wn4ptrdtu7ja0sxh.png.webp"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 5,
+    "fields": {
+      "name": "Программы ЭКО",
+      "description": "Вспомогательные репродуктивные технологии (ВРТ) помогают осуществить нашим пациентам долгожданную мечту — стать родителями. Для этого используется экстракорпоральное оплодотворение (ЭКО). Это процесс искусственного зачатия, когда оплодотворение яйцеклетки происходит в лабораторных условиях.\r\n\r\nСуществует множество протоколов (программ) ЭКО, которые могут включать в себя, в том числе, стимуляцию и овуляцию, использование донорских биоматериалов, криоконсервацию и многое другое.  В таком  многообразии программ ЭКО неподготовленному человеку сложно разобраться. Сориентироваться, какие услуги входят в каждый протокол, и понять его примерную стоимость поможет «СМ-Клиника».\r\n\r\nМы сформировали комплексные программы ЭКО, описав состав, особенности и примерную стоимость каждой из них.",
+      "price": "350000.00",
+      "picture": "services/gt8zsdgvo1efdsn3oddm78dg4thv0ag9.png.webp"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 6,
+    "fields": {
+      "name": "Предоперационная подготовка",
+      "description": "Несмотря на успехи современной фармакологии и различных терапевтических методов лечения, иногда для решения серьезных проблем со здоровьем единственным выходом является хирургическая операция.\r\n\r\nЗаболевание, требующее хирургического лечения, это повод серьезно подумать над выбором медицинской клиники и высокопрофессионального хирурга, которому не страшно доверить свое здоровье.\r\n\r\nК тому же, планируемая хирургическая операция, это не только серьезная моральная, но финансовая нагрузка, ведь помимо самой операции требуется обширная предоперационная подготовка и последующая реабилитация. Экономить на здоровье, как известно, не стоит. Но, если эта экономия не идет в ущерб качеству, то сократить расходы на лечение не откажется никто!\r\n\r\nВ медицинском холдинге «МЕДСити» комплексная предоперационная подготовка ко всем видам плановых операций проводится со скидкой 20%!",
+      "price": "50000.00",
+      "picture": "services/e8yqlnh2waui3iu1lv4zl0lhskwcsubt.png.webp"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 7,
+    "fields": {
+      "name": "Комплексная лабораторная диагностика для пациентов 65+",
+      "description": "Помните, с каким трепетом и вниманием о вас заботились родители в детстве? Теперь настала ваша очередь, ведь пожилые люди тоже нуждаются в особом внимании и уходе. И лучше всего, когда таким важным вопросом занимаются профессионалы!\r\nЗаботясь о благополучии ваших родных, специалисты «СМ-Клиника» разработали ряд комплексных программ по ведению пациентов старше 65 лет. И сейчас у вас есть возможность приобрести эти программы на выгодных условиях!\r\nВыбирая «МЕДСити», вы доверяете заботу о здоровье своих родных настоящим профессионалам своего дела!",
+      "price": "25000.00",
+      "picture": "services/nl0szfdo9hrk546r3015x0g2nrzlrmbg.png.webp"
+    }
+  },
+  {
+    "model": "services.record",
+    "pk": 17,
+    "fields": {
+      "user": 2,
+      "service": 2,
+      "doctor": 2,
+      "created_at": "2024-08-23T11:16:44.612Z",
+      "record_time": "2024-08-23"
+    }
+  },
+  {
+    "model": "services.record",
+    "pk": 18,
+    "fields": {
+      "user": 2,
+      "service": 4,
+      "doctor": 1,
+      "created_at": "2024-08-23T11:30:58.144Z",
+      "record_time": "2024-08-23"
+    }
+  },
+  {
+    "model": "services.record",
+    "pk": 19,
+    "fields": {
+      "user": 1,
+      "service": 4,
+      "doctor": 2,
+      "created_at": "2024-08-23T11:35:57.745Z",
+      "record_time": "2024-08-23"
+    }
+  },
+  {
+    "model": "services.diagnostic",
+    "pk": 1,
+    "fields": {
+      "user": 2,
+      "record": 17,
+      "result": "Тест",
+      "diagnose": "тест"
+    }
+  },
+  {
+    "model": "services.diagnostic",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "record": 18,
+      "result": "sss",
+      "diagnose": "sss"
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$2YLlwCmue2PAzLcnIZNrrG$FRdwfuYXeiLUIiJh8Va3SQgBqdF9D6yQh262BhREumA=",
+      "last_login": "2024-08-23T13:15:38.144Z",
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-08-21T18:56:45Z",
+      "email": "venya957@gmail.com",
+      "first_name": "Вениамин",
+      "last_name": "Илларионов",
+      "avatar": "users/photo/avito-image.jpg",
+      "phone": null,
+      "country": null,
+      "token": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$9muKOeLcIN9BoqihylsglL$ywoxtTc1pRi1wO/dOPaSmXbmWYgBskaDOyF1yL0+m50=",
+      "last_login": "2024-08-23T11:36:05.594Z",
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-08-21T21:23:00Z",
+      "email": "venya_-@mail.ru",
+      "first_name": "Сергей",
+      "last_name": "Ватажко",
+      "avatar": "users/photo/IMG_20190608_201449.jpg",
+      "phone": "89626019265",
+      "country": "Россия",
+      "token": "89cb1ca79f68a37bbbd65846829927cb6c949fac",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]

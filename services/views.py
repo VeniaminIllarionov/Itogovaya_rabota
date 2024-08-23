@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from services.forms import ServiceForm, RecordForm
-from services.models import Service, Record
+from services.models import Service, Record, Diagnostic
 from users.services import get_qs_from_cache
 
 
@@ -72,7 +72,6 @@ class RecordCreateView(LoginRequiredMixin, CreateView):
     redirect_field_name = "redirect_to"
 
 
-
 class RecordListView(ListView):
     model = Record
     template_name = 'services/record_list.html'
@@ -99,3 +98,11 @@ class RecordDeleteView(LoginRequiredMixin, DeleteView):
     success_url = reverse_lazy('services:record_list')
     login_url = "users:login"
     redirect_field_name = "redirect_to"
+
+
+class DiagnosticListView(LoginRequiredMixin, ListView):
+    model = Diagnostic
+    template_name = 'services/diagnostic_list.html'
+    success_url = reverse_lazy('services:record_list')
+    permission_required = 'services.view_diagnostics'
+
