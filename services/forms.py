@@ -1,6 +1,6 @@
 from django import forms
 
-from services.models import Service
+from services.models import Service, Record
 from users.forms import StyleFormMixin
 
 
@@ -10,3 +10,7 @@ class ServiceForm(StyleFormMixin, forms.ModelForm):
         fields = '__all__'
 
 
+class RecordForm(StyleFormMixin, forms.ModelForm):
+    class Meta:
+        model = Record
+        exclude = '__all__'

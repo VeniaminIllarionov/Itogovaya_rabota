@@ -1,5 +1,7 @@
 from django.db import models
 
+from config import settings
+
 
 class Service(models.Model):
     name = models.CharField(max_length=250, verbose_name='Услуга')
@@ -13,3 +15,27 @@ class Service(models.Model):
     class Meta:
         verbose_name = 'Услуга'
         verbose_name_plural = 'Услуги'
+
+
+class Record(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, verbose_name="Пользователь")
+    service = models.ForeignKey("services.Service", on_delete=models.CASCADE, related_name="Услуги", )
+    doctor = models.ForeignKey("doctors.Doctor", on_delete=models.CASCADE, related_name="Доктор")
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def get_user_email(self):
+        return self.user.email
+
+    def __str__(self):
+        return f"{self.user.email} подписан на {self.service.name}."
+
+    class Meta:
+        verbose_name = 'Запись'
+        verbose_name_plural = 'Записи'
+        permissions = [
+            ('can_add_record', 'Может добавлять запись'),
+            ('can_change_record', 'Может изменять запись'),
+            ('can_view_record', 'Может просматривать запись'),
+            ('can_delete_record', 'Может удалять запись'),
+        ]
+
