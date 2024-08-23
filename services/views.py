@@ -1,4 +1,5 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.forms import inlineformset_factory
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
@@ -71,6 +72,7 @@ class RecordCreateView(LoginRequiredMixin, CreateView):
     redirect_field_name = "redirect_to"
 
 
+
 class RecordListView(ListView):
     model = Record
     template_name = 'services/record_list.html'
@@ -85,6 +87,11 @@ class RecordUpdateView(LoginRequiredMixin, UpdateView):
     success_url = reverse_lazy('services:record_list')
     login_url = "users:login"
     redirect_field_name = "redirect_to"
+
+    def get_form_class(self):
+        user = self.request.user
+        if user == self.object.user:
+            return RecordForm
 
 
 class RecordDeleteView(LoginRequiredMixin, DeleteView):

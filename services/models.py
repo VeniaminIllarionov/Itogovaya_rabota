@@ -23,12 +23,13 @@ class Record(models.Model):
     service = models.ForeignKey(Service, on_delete=models.CASCADE, related_name="Услуги")
     doctor = models.ForeignKey(Doctor, on_delete=models.CASCADE, related_name="Доктор")
     created_at = models.DateTimeField(auto_now_add=True)
+    record_time = models.DateField(verbose_name='Дата записи')
 
     def get_user_email(self):
         return self.user.email
 
     def __str__(self):
-        return f"{self.user.email} записан на {self.service.name} к {self.doctor}."
+        return f"{self.user.last_name} {self.user.first_name} записан на {self.service.name} к {self.doctor}."
 
     class Meta:
         verbose_name = 'Запись'
