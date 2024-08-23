@@ -24,7 +24,7 @@
                                             {% if user == record.user or user.is_superuser %}
                                                 <a class="btn btn-warning"
                                                    href="{% url 'services:record_edit' record.pk %}"
-                                                   role="button">Редактировать</a>
+                                                   role="button">Изменить</a>
                                                 <a class="btn btn-danger"
                                                    href="{% url 'services:record_delete' record.pk %}"
                                                    role="button">Отменить</a>
