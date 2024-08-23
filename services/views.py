@@ -76,7 +76,7 @@ class RecordListView(ListView):
     template_name = 'services/record_list.html'
 
     def get_queryset(self):
-        return get_qs_from_cache(qs=Service.objects.all(), key='record_list')
+        return get_qs_from_cache(qs=Record.objects.all(), key='record_list')
 
 
 class RecordUpdateView(LoginRequiredMixin, UpdateView):

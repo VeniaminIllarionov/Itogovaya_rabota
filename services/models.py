@@ -20,7 +20,7 @@ class Service(models.Model):
 
 class Record(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name="Пользователь")
-    service = models.ForeignKey(Service, on_delete=models.CASCADE, related_name="Услуги", )
+    service = models.ForeignKey(Service, on_delete=models.CASCADE, related_name="Услуги")
     doctor = models.ForeignKey(Doctor, on_delete=models.CASCADE, related_name="Доктор")
     created_at = models.DateTimeField(auto_now_add=True)
 

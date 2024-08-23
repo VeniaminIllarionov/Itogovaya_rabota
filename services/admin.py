@@ -12,7 +12,7 @@ class ServiceAdmin(admin.ModelAdmin):
 
 @admin.register(Record)
 class ServiceAdmin(admin.ModelAdmin):
-    list_display = ('id', 'user', 'doctor')
+    list_display = ('id', 'user', 'doctor', 'created_at')
     list_filter = ('id', 'created_at')
     search_fields = ('user', 'created_at',)
 
