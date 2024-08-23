@@ -1,6 +1,7 @@
 from django.db import models
 
-from config import settings
+from doctors.models import Doctor
+from users.models import User
 
 
 class Service(models.Model):
@@ -18,16 +19,16 @@ class Service(models.Model):
 
 
 class Record(models.Model):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, verbose_name="Пользователь")
-    service = models.ForeignKey("services.Service", on_delete=models.CASCADE, related_name="Услуги", )
-    doctor = models.ForeignKey("doctors.Doctor", on_delete=models.CASCADE, related_name="Доктор")
+    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name="Пользователь")
+    service = models.ForeignKey(Service, on_delete=models.CASCADE, related_name="Услуги", )
+    doctor = models.ForeignKey(Doctor, on_delete=models.CASCADE, related_name="Доктор")
     created_at = models.DateTimeField(auto_now_add=True)
 
     def get_user_email(self):
         return self.user.email
 
     def __str__(self):
-        return f"{self.user.email} записан на {self.service.name}."
+        return f"{self.user.email} записан на {self.service.name} к {self.doctor}."
 
     class Meta:
         verbose_name = 'Запись'

@@ -15,3 +15,5 @@ class ServiceAdmin(admin.ModelAdmin):
     list_display = ('id', 'user', 'doctor')
     list_filter = ('id', 'created_at')
     search_fields = ('user', 'created_at',)
+
+

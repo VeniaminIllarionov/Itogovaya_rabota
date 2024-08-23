@@ -1,8 +1,6 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
-from services.models import Service
-
 
 # Create your models here.
 class User(AbstractUser):
@@ -22,14 +20,12 @@ class User(AbstractUser):
                                null=True, help_text='Введите страну')
     token = models.CharField(max_length=100, verbose_name='Токен', blank=True, null=True, )
 
-
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
 
     class Meta:
         verbose_name = 'Пользователь'
         verbose_name_plural = 'Пользователи'
-
 
     def __str__(self):
         return f'{self.first_name} {self.last_name}'

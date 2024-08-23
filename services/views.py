@@ -2,12 +2,8 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from rest_framework.response import Response
-from rest_framework import generics
-
 from services.forms import ServiceForm, RecordForm
 from services.models import Service, Record
-from services.tasks import send_email_task
 from users.services import get_qs_from_cache
 
 
@@ -74,10 +70,25 @@ class RecordCreateView(LoginRequiredMixin, CreateView):
     login_url = "users:login"
     redirect_field_name = "redirect_to"
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['title'] = f'Создание записи для клиента'
-        return context
+
+class RecordListView(ListView):
+    model = Record
+    template_name = 'services/record_list.html'
 
     def get_queryset(self):
-        return Record.objects.all()
+        return get_qs_from_cache(qs=Service.objects.all(), key='record_list')
+
+
+class RecordUpdateView(LoginRequiredMixin, UpdateView):
+    model = Record
+    form_class = RecordForm
+    success_url = reverse_lazy('services:record_list')
+    login_url = "users:login"
+    redirect_field_name = "redirect_to"
+
+
+class RecordDeleteView(LoginRequiredMixin, DeleteView):
+    model = Record
+    success_url = reverse_lazy('services:record_list')
+    login_url = "users:login"
+    redirect_field_name = "redirect_to"
