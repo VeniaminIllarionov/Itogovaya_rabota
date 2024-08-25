@@ -10,7 +10,7 @@ app_name = ServicesConfig.name
 
 urlpatterns = [
     path('create/', ServiceCreateView.as_view(), name='create'),
-    path('', ServiceListView.as_view(), name='home'),
+    path('', cache_page(60)(ServiceListView.as_view()), name='home'),
     path('edit/<int:pk>/', ServiceUpdateView.as_view(), name='edit'),
     path('contact/', contacts, name='contact'),
     path('company/', company, name='company'),
