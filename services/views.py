@@ -33,6 +33,10 @@ def company(request):
     return render(request, 'services/company.html')
 
 
+def mission(request):
+    return render(request, 'services/mission.html')
+
+
 class ServiceCreateView(LoginRequiredMixin, CreateView):
     model = Service
     form_class = ServiceForm
@@ -105,4 +109,3 @@ class DiagnosticListView(LoginRequiredMixin, ListView):
     template_name = 'services/diagnostic_list.html'
     success_url = reverse_lazy('services:record_list')
     permission_required = 'services.view_diagnostics'
-

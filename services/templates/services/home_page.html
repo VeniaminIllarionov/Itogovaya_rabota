@@ -2,6 +2,20 @@
 {% load my_tags %}
 {% block content %}
 
+
+
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+            <div class="col-12 mb-5">
+                <a type="button" class="btn btn-primary btn-lg" href={% url 'services:home'%}>Услуги</a>
+                <a type="button" class="btn btn-primary btn-lg" href={% url 'doctors:home'%}>Наши врачи</a>
+                <a type="button" class="btn btn-primary btn-lg" href={% url 'services:company'%} >О нас</a>
+                <a type="button" class="btn btn-primary btn-lg" href={% url 'services:contact'%}>Контакты</a>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center;"><h2>Акции и предложения месяца</h2></div>
     <div class="col-12 text-center">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -19,5 +33,6 @@
             </div>
         </div>
     </div>
+    <div style="text-align: center;"><h2>Наша миссия и ценности</h2></div>
 
 {% endblock %}

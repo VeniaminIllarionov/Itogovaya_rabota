@@ -1,0 +1,105 @@
+{% extends 'services/base.html' %}
+{% load my_tags %}
+{% block content %}
+
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+            <div class="col-12 mb-5">
+                <a type="button" class="btn btn-primary btn-lg" href={% url 'services:home' %}>Услуги</a>
+                <a type="button" class="btn btn-primary btn-lg" href={% url 'services:home' %}>Услуги</a>
+                <a type="button" class="btn btn-primary btn-lg" href={% url 'doctors:home' %}>Наши врачи</a>
+                <a type="button" class="btn btn-primary btn-lg" href={% url 'services:company' %}>О нас</a>
+                <a type="button" class="btn btn-primary btn-lg" href={% url 'services:contact' %}>Контакты</a>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <img src="https://astery-med.ru/assets/cache_image/images/slider/banner-gemor_1910x650_243.jpg"
+             class="img-fluid" alt="...">
+    </section>
+    <p>
+    <div class="subsection_header"><h1>Ценности</h1></div>
+
+    <p>
+    <div class="about_mission_worth_content">
+        <div class="about_mission_worth_item" id="bx_3485106786_19418738">
+            <div class="worth_picture-wrapper">
+                <img src="https://cdn-icons-png.flaticon.com/512/6181/6181756.png"
+                     class="rounded float-start" alt="..." style="width:70px;>
+            </div>
+            <div class=" worth_text">
+                <div class="worth_text_bold"><h3>Милосердие</h3></div>
+                <div class="worth_text_normal">Мы действуем во благо пациента, проявляя уважение, сострадание и
+                    доброжелательность.
+                </div>
+            </div>
+        </div>
+        <p>
+        <div class="about_mission_worth_item" id="bx_3485106786_19418736">
+            <div class="worth_picture-wrapper">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBoi4kc_EprsjLTaHm8jNbmsM46AJp-x7e0g&s"
+                     class="rounded float-start" alt="..." style="width:70px;>
+            </div>
+            <div class="worth_text">
+                <div class="worth_text_bold"><h3>Единство</h3></div>
+                <div class="worth_text_normal">Успех нашей Компании - единство общих целей, преемственность, соблюдение
+                    стандартов качества и слаженная работа команды.
+                </div>
+            </div>
+        </div>
+        <p>
+        <div class="about_mission_worth_item" id="bx_3485106786_19418745">
+            <div class="worth_picture-wrapper">
+                <img src="https://cdn-icons-png.flaticon.com/512/4371/4371345.png"
+                     class="rounded float-start" alt="..." style="width:70px;>
+            </div>
+            <div class="worth_text">
+                <div class="worth_text_bold"><h3>Доверие</h3></div>
+                <div class="worth_text_normal">Мы несем ответственность за результат на каждом этапе взаимодействия с
+                    пациентом. Мы развиваем культуру ответственного отношения пациента к собственному здоровью и
+                    здоровью близких. Наши принципы - уважение, доверие, честность, справедливость в сотрудничестве с
+                    пациентами, партнерами, научным сообществом и акционерами.
+                </div>
+            </div>
+        </div>
+        <p>
+        <div class="about_mission_worth_item" id="bx_3485106786_19418743">
+            <div class="worth_picture-wrapper">
+               <img src="https://cdn-icons-png.flaticon.com/512/554/554744.png"
+                     class="rounded float-start" alt="..." style="width:70px;>
+            </div>
+            <div class="worth_text">
+                <div class="worth_text_bold"><h3>Сотрудники</h3>Сотрудники</div>
+                <div class="worth_text_normal">Сила Команды МЕДСити - профессионализм, сопричастность ценностям Компании,
+                    непрерывное развитие, взаимовыручка и уважение к труду каждого.
+                </div>
+            </div>
+        </div>
+        <p>
+        <div class="about_mission_worth_item" id="bx_3485106786_19418741">
+            <div class="worth_picture-wrapper">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQWenTOWB_PYy-_hyO64pOElei7jiUeeHzA&s"
+                     class="rounded float-start" alt="..." style="width:70px;>
+            </div>
+            <div class="worth_text">
+                <div class="worth_text_bold"><h3>Инновации</h3></div>
+                <div class="worth_text_normal">Мы внедряем в реальную клиническую практику инновационные технологии,
+                    повышающие эффективность и безопасность медицинской помощи.
+                </div>
+            </div>
+        </div>
+        <p>
+        <div class="about_mission_worth_item" id="bx_3485106786_19418739">
+            <div class="worth_picture-wrapper">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1sYfrEQ8NmSH88S2OIvz2ioh76j7F4vWuXg&s"
+                     class="rounded float-start" alt="..." style="width:70px;>
+            </div>
+            <div class="worth_text">
+                <div class="worth_text_bold"><h3>Видение</h3></div>
+                <div class="worth_text_normal">Быть признанным лидером отечественного здравоохранения.</div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
