@@ -234,6 +234,32 @@
     }
   },
   {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2024-08-25T07:10:49.570Z",
+      "user": 1,
+      "content_type": 3,
+      "object_id": "1",
+      "object_repr": "moderator",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2024-08-25T07:10:52.846Z",
+      "user": 1,
+      "content_type": 3,
+      "object_id": "1",
+      "object_repr": "moderator",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
     "model": "auth.permission",
     "pk": 1,
     "fields": {
@@ -639,6 +665,31 @@
     }
   },
   {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+      "name": "moderator",
+      "permissions": [
+        21,
+        22,
+        23,
+        24,
+        41,
+        45,
+        42,
+        43,
+        44,
+        37,
+        38,
+        40,
+        39,
+        30,
+        31,
+        32
+      ]
+    }
+  },
+  {
     "model": "contenttypes.contenttype",
     "pk": 1,
     "fields": {
@@ -740,6 +791,14 @@
     "fields": {
       "session_data": ".eJxVjEEOwiAQRe_C2hBgaGFcuvcMZMoMUjVtUtqV8e7apAvd_vfef6lE21rT1mRJI6uzcur0uw2UHzLtgO803Wad52ldxkHvij5o09eZ5Xk53L-DSq1-a3RZYm87AvJdscETM0UpxvOQQSQwAAMWJxA7WxCd8wZdMH3A0iOq9wfwlzeR:1shS7x:OST_DiQeqe3A3llEXIjuznKmSp6W2GsW_65lRZBoMjU",
       "expire_date": "2024-09-06T11:06:45.473Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "lp10hnr4dhfjbs20t52rovbrm2mx8va5",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSEMpcPg0r3fQIZHpWogKe3K-O_apAvd3nPOfQnP21r81vPi5yTOAsTpdwscH7nuIN253pqMra7LHOSuyIN2eW0pPy-H-3dQuJdvnYcACAZtRBxpiDApS6Q1E_CoNSqrMkFMztlgsk6EZBhoYodBDzaK9wewYja_:1shVW2:j0cAArOKRQnJB5XyHShCBMLeNH1zO-UvJdXMpjNIKd4",
+      "expire_date": "2024-09-06T14:43:50.505Z"
     }
   },
   {
@@ -923,7 +982,7 @@
     "pk": 1,
     "fields": {
       "password": "pbkdf2_sha256$600000$2YLlwCmue2PAzLcnIZNrrG$FRdwfuYXeiLUIiJh8Va3SQgBqdF9D6yQh262BhREumA=",
-      "last_login": "2024-08-23T13:15:38.144Z",
+      "last_login": "2024-08-23T14:43:50.496Z",
       "is_superuser": true,
       "is_staff": true,
       "is_active": true,
