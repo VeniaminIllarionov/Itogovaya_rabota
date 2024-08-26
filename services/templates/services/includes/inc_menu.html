@@ -30,6 +30,7 @@
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                aria-expanded="false">Пользователь</a>
             <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'services:record' %}">Записаться на прием</a></li>
                 <li><a class="dropdown-item" href="{% url 'services:record_list' %}">Мои записи</a></li>
                 <li><a class="dropdown-item" href="{% url 'services:diagnostic_list' %}">Результаты</a></li>
                 <li><a class="dropdown-item" href="{% url 'users:logout' %}">Выйти</a></li>

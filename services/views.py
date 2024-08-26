@@ -3,6 +3,8 @@ from django.forms import inlineformset_factory
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+
+
 from services.forms import ServiceForm, RecordForm
 from services.models import Service, Record, Diagnostic
 from users.services import get_qs_from_cache
@@ -67,6 +69,9 @@ class ServiceDetailView(LoginRequiredMixin, DetailView):
     redirect_field_name = "redirect_to"
 
 
+
+
+
 class RecordCreateView(LoginRequiredMixin, CreateView):
     """Record create """
     model = Record
@@ -77,7 +82,6 @@ class RecordCreateView(LoginRequiredMixin, CreateView):
 
     def form_valid(self, form):
         form.instance.user = self.request.user
-        form.instance.service =
         return super().form_valid(form)
 
 
@@ -114,5 +118,4 @@ class RecordDeleteView(LoginRequiredMixin, DeleteView):
 class DiagnosticListView(LoginRequiredMixin, ListView):
     model = Diagnostic
     template_name = 'services/diagnostic_list.html'
-    success_url = reverse_lazy('services:record_list')
     permission_required = 'services.view_diagnostics'

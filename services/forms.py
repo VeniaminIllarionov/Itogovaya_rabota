@@ -13,4 +13,4 @@ class ServiceForm(StyleFormMixin, forms.ModelForm):
 class RecordForm(StyleFormMixin, forms.ModelForm):
     class Meta:
         model = Record
-        exclude = ('user', 'is_active', 'service')
+        exclude = ('user', 'is_active')
