@@ -75,6 +75,11 @@ class RecordCreateView(LoginRequiredMixin, CreateView):
     login_url = "users:login"
     redirect_field_name = "redirect_to"
 
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        form.instance.service =
+        return super().form_valid(form)
+
 
 class RecordListView(ListView):
     model = Record
@@ -102,6 +107,8 @@ class RecordDeleteView(LoginRequiredMixin, DeleteView):
     success_url = reverse_lazy('services:record_list')
     login_url = "users:login"
     redirect_field_name = "redirect_to"
+
+
 
 
 class DiagnosticListView(LoginRequiredMixin, ListView):

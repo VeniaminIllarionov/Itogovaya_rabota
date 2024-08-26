@@ -14,22 +14,37 @@
 
             </ul>
         </li>
+        {% if user.is_superuser %}
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+               aria-expanded="false">Админ</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'services:create' %}">Создать Услугу</a></li>
+                <li><a class="dropdown-item" href="{% url 'doctors:create' %}">Добавить доктора</a></li>
+                <li><a class="dropdown-item" href="{% url 'services:record_list' %}">Просмотр записей</a></li>
+            </ul>
+        </li>
+        {% endif %}
         {% if user.is_authenticated %}
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'services:record_list' %}">Мои записи</a>
-                    <a class="nav-link" href="{% url 'users:logout' %}">Выйти</a>
-                </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+               aria-expanded="false">Пользователь</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'services:record_list' %}">Мои записи</a></li>
+                <li><a class="dropdown-item" href="{% url 'services:diagnostic_list' %}">Результаты</a></li>
+                <li><a class="dropdown-item" href="{% url 'users:logout' %}">Выйти</a></li>
             </ul>
+        </li>
+
         {% else %}
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'users:login' %}">Вход</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'users:register' %}">Зарегестрироваться</a>
-                </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+               aria-expanded="false">Пользователь</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'users:login' %}">Вход</a></li>
+                <li><a class="dropdown-item" href="{% url 'users:register' %}">Зарегестрироваться</a></li>
             </ul>
+        </li>
         {% endif %}
 
     </ul>

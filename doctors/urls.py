@@ -9,7 +9,7 @@ app_name = DoctorsConfig.name
 
 urlpatterns = [
     path('create/', DoctorCreateView.as_view(), name='create'),
-    path('', cache_page(60)(DoctorListView.as_view()), name='home'),
+    path('', DoctorListView.as_view(), name='home'),
     path('edit/<int:pk>/', DoctorUpdateView.as_view(), name='edit'),
     path('delete/<int:pk>/', DoctorDeleteView.as_view(), name='delete'),
-    path('detail/<int:pk>/', cache_page(60)(DoctorDetailView.as_view()), name='doctor_detail'), ]
+    path('detail/<int:pk>/', DoctorDetailView.as_view(), name='doctor_detail'), ]

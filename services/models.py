@@ -24,6 +24,7 @@ class Record(models.Model):
     doctor = models.ForeignKey(Doctor, on_delete=models.CASCADE, related_name="Доктор")
     created_at = models.DateTimeField(auto_now_add=True)
     record_time = models.DateField(verbose_name='Дата записи')
+    is_active = models.BooleanField(default=True, verbose_name='Отмена записи')
 
     def __str__(self):
         return f"{self.user.last_name} {self.user.first_name} записан на {self.service.name} к {self.doctor}."
