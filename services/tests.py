@@ -33,10 +33,23 @@ class TestService(TestCase):
                                                     )
         self.client = Client()
         self.list_url = reverse('services:home')
+        self.create_url = reverse('services:create')
         self.detail_url = reverse('services:service_detail', args=[self.service.pk])
 
+    def test_create_service(self):
+        """ Тестирование создания сервиса """
 
+        response = self.client.get(self.create_url, {"name": "TEST2",
+                                                     "description": "МРТ",
+                                                     "price": '12000.00', })
 
+        self.assertEqual(response.status_code, status.HTTP_302_FOUND)
+        self.assertEqual(Service.objects.all().count(), 1)
+        self.assertEqual(HttpResponseRedirect, 'TEST2')
+        # self.assertEqual(data.get("course"), self.lesson.course.id)
+
+        # self.assertEqual(data.get("url_video"), "https://www.youtube.com/watch")
+        # self.assertEqual(data.get("description"), "Test")
 
     def test_service_list_GET(self):
         response = self.client.get(self.list_url)
@@ -48,8 +61,6 @@ class TestService(TestCase):
         response = self.client.get(self.detail_url)
 
         self.assertEqual(response.status_code, status.HTTP_302_FOUND)
-
-
 
     def test_delete_service(self):
         """ Тестирование удаления сервиса """
@@ -77,11 +88,7 @@ class TestService(TestCase):
 
         response = self.client.put(url, data=data)
 
-
-
         self.assertEqual(response.status_code, status.HTTP_302_FOUND)
         self.assertEqual(data.get("name"), "TEST2")
         self.assertEqual(data.get("description"), "МРТ")
         self.assertEqual(data.get("price"), '12000.00')
-
-
