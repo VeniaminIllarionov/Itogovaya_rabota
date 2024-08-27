@@ -84,3 +84,4 @@ class TestService(TestCase):
         self.assertEqual(data.get("description"), "МРТ")
         self.assertEqual(data.get("price"), '12000.00')
 
+
