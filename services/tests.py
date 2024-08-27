@@ -65,3 +65,22 @@ class TestService(TestCase):
 
         self.assertEqual(response.status_code, status.HTTP_302_FOUND)
 
+    def test_edit_service(self):
+        """ Тестирование изменения сервиса """
+
+        url = reverse("services:edit", args=(self.service.pk,))
+        data = {
+            "name": "TEST2",
+            "description": "МРТ",
+            "price": '12000.00',
+        }
+
+        response = self.client.put(url, data=data)
+
+
+
+        self.assertEqual(response.status_code, status.HTTP_302_FOUND)
+        self.assertEqual(data.get("name"), "TEST2")
+        self.assertEqual(data.get("description"), "МРТ")
+        self.assertEqual(data.get("price"), '12000.00')
+
