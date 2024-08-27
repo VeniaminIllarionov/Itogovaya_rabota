@@ -14,7 +14,7 @@ class TestService(TestCase):
         self.service = Service.objects.create(name="TEST1",
                                               description="Магнитно-резонансная томография (МРТ)",
                                               price=10000.00)
-        self.user = User.objects.create(email='testuser@example.com', password='test123')
+        self.user = User.objects.create(email='testuser@example.com')
         self.doctor = Doctor.objects.create(name="Сергей",
                                             surname="Ватажко",
                                             patronymic="Борисович",
@@ -34,7 +34,7 @@ class TestService(TestCase):
         self.client = Client()
         self.list_url = reverse('services:home')
         self.detail_url = reverse('services:service_detail', args=[self.service.pk])
-        self.delete_url = reverse('services:delete', args=[self.service.pk])
+
 
 
 
@@ -49,11 +49,19 @@ class TestService(TestCase):
 
         self.assertEqual(response.status_code, status.HTTP_302_FOUND)
 
-    def test_service_delete_GET(self):
-        response = self.client.delete(reverse(self.detail_url))
+
+
+    def test_delete_service(self):
+        """ Тестирование удаления сервиса """
+
+        url = reverse("services:delete", args=(self.service.pk,))
+        data = {
+            "name": "TEST1",
+            "description": "Магнитно-резонансная томография (МРТ)",
+            "price": '10000.00',
+        }
+
+        response = self.client.delete(url, data=data)
 
         self.assertEqual(response.status_code, status.HTTP_302_FOUND)
-        self.assertTemplateUsed(response, 'services/service_confirm_delete.html')
-
-
 
