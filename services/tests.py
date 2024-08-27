@@ -46,10 +46,7 @@ class TestService(TestCase):
         self.assertEqual(response.status_code, status.HTTP_302_FOUND)
         self.assertEqual(Service.objects.all().count(), 1)
         self.assertEqual(self.service.name, "TEST1")
-        # self.assertEqual(data.get("course"), self.lesson.course.id)
 
-        # self.assertEqual(data.get("url_video"), "https://www.youtube.com/watch")
-        # self.assertEqual(data.get("description"), "Test")
 
     def test_service_list_GET(self):
         response = self.client.get(self.list_url)
