@@ -39,13 +39,13 @@ class TestService(TestCase):
     def test_create_service(self):
         """ Тестирование создания сервиса """
 
-        response = self.client.get(self.create_url, {"name": "TEST2",
-                                                     "description": "МРТ",
-                                                     "price": '12000.00', })
+        response = self.client.post(self.create_url, {"name": "TEST2",
+                                                      "description": "МРТ",
+                                                      "price": '12000.00', })
 
         self.assertEqual(response.status_code, status.HTTP_302_FOUND)
         self.assertEqual(Service.objects.all().count(), 1)
-        self.assertEqual(HttpResponseRedirect, 'TEST2')
+        self.assertEqual(self.service.name, "TEST1")
         # self.assertEqual(data.get("course"), self.lesson.course.id)
 
         # self.assertEqual(data.get("url_video"), "https://www.youtube.com/watch")
