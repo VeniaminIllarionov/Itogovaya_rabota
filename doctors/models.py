@@ -6,7 +6,6 @@ class Doctor(models.Model):
     surname = models.CharField(max_length=250, verbose_name='Фамилия')
     patronymic = models.CharField(max_length=250, verbose_name='Отчество')
     work_experience = models.IntegerField(default=0, verbose_name='Стаж работы')
-    clinical = models.TextField(verbose_name='Клиника')
     specialization = models.CharField(max_length=250, verbose_name='Специализация')
     science = models.TextField(verbose_name='Ученая степень / Категория / Ученое звание')
     post = models.CharField(max_length=250, verbose_name='Должность')
