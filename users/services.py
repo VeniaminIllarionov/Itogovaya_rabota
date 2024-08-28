@@ -1,6 +1,7 @@
 from django.core.cache import cache
 from config.settings import CACHE_ENABLED
 
+
 def get_qs_from_cache(qs, key):
     if not CACHE_ENABLED:
         return qs
