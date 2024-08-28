@@ -1,5 +1,4 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.forms import inlineformset_factory
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
@@ -7,15 +6,11 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 
 from services.forms import ServiceForm, RecordForm
 from services.models import Service, Record, Diagnostic
-from users.services import get_qs_from_cache
-
 
 class ServiceListView(ListView):
     model = Service
     template_name = 'services/home.html'
 
-    def get_queryset(self):
-        return get_qs_from_cache(qs=Service.objects.all(), key='service_list')
 
 
 def contacts(request):
@@ -93,9 +88,6 @@ class RecordCreateView(LoginRequiredMixin, CreateView):
 class RecordListView(ListView):
     model = Record
     template_name = 'services/record_list.html'
-
-    def get_queryset(self):
-        return get_qs_from_cache(qs=Record.objects.all(), key='record_list')
 
 
 class RecordUpdateView(LoginRequiredMixin, UpdateView):
